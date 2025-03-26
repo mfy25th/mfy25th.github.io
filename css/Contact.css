@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../img/background-szk.webp") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+@keyframes remove {
+    100%{
+        opacity: 0;
+    }
+}
+::selection {
+    background-color: #8888cc; /* 可以根据需要更改颜色 */
+}
+pre{
+    text-align: center;/* 文本居中 */
+    margin-top: 50px;
+}
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid #000000;
+    top: 0;
+    width: 100%;
+}
+.ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 14px;
+    float: left;
+    color: #ffffff;
+}
+.ul li a:hover:not(.active){
+    color: #000000;
+    background-color: #FFB7C5;
+}
+.active{
+    background-color: #f34c6d;
+}
+.active:hover{
+    background-color: #5620df;
+}
